@@ -1,24 +1,25 @@
 import time
 
-t = input("Enter the time (In seconds): ")
+def start_timer():
+    while True:
+        try:
+            t = int(input("Enter the time (in seconds): "))
+            if t > 0:
+                break
+            else:
+                print("Please enter a positive number.")
+        except ValueError:
+            print("Invalid input! Please enter a valid number.")
+    
+    input("Press Enter to start the timer...")
 
-if t.isdigit():
-    t = int(t)
-else:
-    print("Invalid input!")
-    quit()
+    while t > 0:
+        minutes, seconds = divmod(t, 60)
+        timer = "{:02d}:{:02d}".format(minutes, seconds)
+        print(timer, end="\r")
+        time.sleep(1)
+        t -= 1
 
-#120/60=2
-#150/60=2|30
-
-while t != 0: #0->False|1,2, ...->True
-     minutes, seconds = divmod(t, 60)
-     timer = "{:02d}:{:02d}".format(minutes, seconds)
-     print(timer, end="\r")
-     time.sleep(1)
-     t = t - 1
-
-#70/60->1|10->TIMER:"1:10"
-#69/60->1|9->TIMER:"1:00"
-
-print("Time is over!")
+    print()  
+    print("Time is over!")
+start_timer()
