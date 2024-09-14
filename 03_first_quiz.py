@@ -8,7 +8,7 @@ if answer_user != "Yes":
 score = 0
 
 print("Starting...")
-print("Who developed the game Grand Theft Auto (GTA)? \n (A) Rockstar Games \n (B) Ubisoft \n (C) Activision \n (D) Electronic Arts \n")
+print("In which year was the Atari company founded? \n (A) 1972 \n (B) 1975 \n (C) 1981 \n (D) 1998 \n")
 answer_1 = input("Response: ")
 
 if answer_1 == "A":
@@ -17,7 +17,7 @@ if answer_1 == "A":
 else:
     print("Incorrect!")
 
-print("What is the name of the protagonist of the game GTA San Andreas? \n (A) Carlos John \n (B) Carl Johnson \n (C) Carl Jaqueline \n (D) Carlos Johnson \n")
+print("Who is the Jedi Master who trains Luke Skywalker in Star Wars: Episode V - The Empire Strikes Back? \n (A) Obi-Wan Kenobi \n (B) Yoda \n (C) Luminara Unduli \n (D) Chewbacca \n")
 answer_2 = input("Response: ")
 
 if answer_2 == "B":
@@ -26,7 +26,7 @@ if answer_2 == "B":
 else:
     print("Incorrect!")
 
-print("What year was GTA San Andreas released? \n (A) 2007 \n (B) 2001 \n (C) 2010 \n (D) 2004 \n")
+print("What is the first title published by J.R.R. Tolkien? \n (A) The Silmarillion \n (B) The Fellowship of the Ring \n (C) Unfinished Tales \n (D) The Hobbit \n")
 answer_3 = input("Response: ")
 
 if answer_3 == "D":
@@ -36,4 +36,3 @@ else:
     print("Incorrect!")
 
 print(f"Quiz is over...Your score is: {score}/3")
-
